@@ -1,0 +1,4 @@
+require 'can_has'
+
+self.can_has?(:whatever) #=> we'll find out...
+self.can_has?(:cheezburger) #=> yep.
