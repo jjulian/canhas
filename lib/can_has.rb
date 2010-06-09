@@ -4,7 +4,11 @@ module CanHas
     when :cheezburger
       true
     else
-      rand(2) > 0
+      if block_given?
+        yield
+      else
+        rand(2) > 0
+      end
     end
   end
 end
